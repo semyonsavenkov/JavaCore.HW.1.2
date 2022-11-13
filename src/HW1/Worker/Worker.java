@@ -14,7 +14,9 @@ public class Worker {
             if (i == 33) {
                 errorCallback.onError("Task " + i + " failed");
             }
-            callback.onDone("Task " + i + " is done");
+            else {
+                callback.onDone("Task " + i + " is done");
+            }
         }
     }
 
